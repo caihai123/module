@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        //util.js
+        function a(){
+            console.log('执行了a函数')
+        }
+        function b(){
+            console.log('执行了b函数')
+        }
+    </script>
+    <!-- <script>
+        //util.js
+        (function (self){
+            function a(){
+            console.log('执行了a函数')
+            }
+            function b(){
+                console.log('执行了b函数')
+            }
+            self.obj = {
+                a,b
+            }
+        }(this))
+    </script> -->
+</head>
+<body>
+    <div id="web">
+        {{value}}
+    </div>
+    <script>
+        new Vue({
+            el:"#web",
+            data:function(){
+                return {
+                    value:"一个案例"
+                }
+            },
+            created:function(){
+                axios.get("https://caihai123.github.io/applet/jsons/capitalize.json").then(function(value){
+                    console.log(value.data)
+                })
+                a();
+            }
+        })
+    </script>
+</body>
+</html>

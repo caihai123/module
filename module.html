@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="web">
+        {{value}}
+    </div>
+    <script type="module">
+        import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.esm.browser.js'
+        // import axios from 'https://unpkg.com/axios/dist/axios.min.js'
+        import {a} from './static/js/util.js'
+        new Vue({
+            el:"#web",
+            data:function(){
+                return {
+                    value:"一个案例"
+                }
+            },
+            created:function(){
+                // axios.get("https://caihai123.github.io/applet/jsons/capitalize.json").then(function(value){
+                //     console.log(value.data)
+                // })
+                a()
+            }
+        })
+    </script>
+</body>
+</html>
