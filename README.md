@@ -75,14 +75,19 @@
 4. 实例：
     > 看module.html
 5. 目前的使用状况
-    > 兼容性不太好，IE不支持，很多工具库也没有提供这种原生module的js文件
+    > 兼容性不太好，IE不支持，很多工具库也没有提供这种原生module的js文件，所以这种模块化开发大都是在node环境下，与CommonJS模块一起使用。
+
+6. 学习教程
+    + module模块  [http://es6.ruanyifeng.com/#docs/module](http://es6.ruanyifeng.com/#docs/module) 阮一峰
+    + CommonJS模块    [https://www.liaoxuefeng.com/wiki/1022910821149312/1023027697415616](https://www.liaoxuefeng.com/wiki/1022910821149312/1023027697415616) 廖雪峰
 
 ### vue-cli（Vue.js 开发的标准工具）
 
 1. vue开发的标准工具，可以用它在node环境下搭建一个基于webpack的vue项目。
+
     1. 安装nodejs及npm
         + nodejs是一个基于 Chrome V8 引擎的 JavaScript 运行环境
-        + ![Image text](./static/images/npm.png)我觉得简单的理解它就是一个模块仓库，然后我们可以通过命令行下载
+        + ![Image text](./static/images/npm.png)我觉得简单的理解它就是一个模块仓库（npm包），然后我们可以通过命令行下载
         + 去nodejs官网下载安装，安装nodejs时，会自动安装npm
     2. 通过npm安装vue-cli
     `npm install -g @vue/cli`
@@ -93,3 +98,8 @@
     5. 打包
     `npm run build`
 2. 项目结构分析
+
+3. 特点
++ 前后端分离
++ 组件化，所有页面由都是由组件拼装而成
++ 
