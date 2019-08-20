@@ -87,7 +87,9 @@
 
     1. 安装nodejs及npm
         + nodejs是一个基于 Chrome V8 引擎的 JavaScript 运行环境
-        + ![Image text](./static/images/npm.png)我觉得简单的理解它就是一个模块仓库（npm包），然后我们可以通过命令行下载
+        <!-- ![Image text](./static/images/npm.png) -->
+        <img src="./static/images/npm.png"  height="300" width="450">
+        + 我觉得简单的理解它就是一个模块仓库（npm包），然后我们可以通过命令行下载
         + 去nodejs官网下载安装，安装nodejs时，会自动安装npm
     2. 通过npm安装vue-cli
     `npm install -g @vue/cli`
@@ -100,6 +102,5 @@
 2. 项目结构分析
 
 3. 特点
-+ 前后端分离
-+ 组件化，所有页面由都是由组件拼装而成
-+ 
+    + 前后端分离
+    + 组件化，所有页面由都是由组件拼装而成
