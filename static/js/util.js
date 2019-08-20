@@ -7,4 +7,7 @@ function b(){
 }
 var c = '蔡海';
 console.log(this)
+export default {
+    a,b
+}
 export {a,b,c}
